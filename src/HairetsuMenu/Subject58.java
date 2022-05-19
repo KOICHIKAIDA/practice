@@ -3,17 +3,16 @@ package HairetsuMenu;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Subject56 {
+public class Subject58 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n  = sc.nextInt();
-        int k  = sc.nextInt();
-        String[] s = new String[n];
+        int[] a = new int[n];
         for (int i = 0; i < n; i++) {
-       		s[i] = sc.next();
+       		a[i] = sc.nextInt();
         }
-        Arrays.sort(s);
-        System.out.println(s[k - 1]);
+        Arrays.sort(a);
+        System.out.println(a[n - 1] + " " + a[0]);
         sc.close();
     }
 }
